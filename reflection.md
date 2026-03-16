@@ -8,13 +8,23 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
 
+  1. Hints were incorrect for the guess. The hint would tell the user to "Go Lower" when it should have stated for them to go higher and tell the user to "Go Higher" when it should have suggested for the user to go lower. 
+  2. The game states that 8 attempts are allowed, but the game only stops the user once 11 attempts are reached. 
+  3. The "New Game" button doesn't work and reset the array.
+
 ---
 
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+Copilot
+Prompt: Search this codebase for the vital error where the system displays "Go Lower" when the guess is lower than the secret key and displays "Go Higher" when the guess is greater than the secret key. Do not make any edits without permission and first identify where the issue is before providing some examples of possible changes that can be made to fix this error.
+
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+Suggested refactoring code to improve logic.
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+AI suggestion wanted to revise only part of the hints being reversed, I had to guide it to implement this edit both ways.
+
 
 ---
 
